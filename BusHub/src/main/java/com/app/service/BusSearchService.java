@@ -8,9 +8,9 @@ public interface BusSearchService {
 
 	List<Bus> getAllBuses();
 
-	List<Bus> getBusesByName(String busName);
+	List<Bus> getBusesBybusName(String busName);
 
-	List<Bus> getBusesBySource(String busSource);
+	List<Bus> getBusesBybusSource(String busSource);
 
-	List<Bus> getBusesByType(String busType);
+	List<Bus> getBusesBybusType(String busType);
 }

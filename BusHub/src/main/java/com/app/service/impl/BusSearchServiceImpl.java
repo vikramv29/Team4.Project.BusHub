@@ -22,21 +22,21 @@ public class BusSearchServiceImpl implements BusSearchService {
 	}
 
 	@Override
-	public List<Bus> getBusesByName(String name) {
+	public List<Bus> getBusesBybusName(String busName) {
 		// TODO Auto-generated method stub
-		return repository.findByName(name);
+		return repository.findBybusName(busName);
 	}
 
 	@Override
-	public List<Bus> getBusesBySource(String busSource) {
+	public List<Bus> getBusesBybusSource(String busSource) {
 		// TODO Auto-generated method stub
-		return repository.findBySource(busSource);
+		return repository.findBybusSource(busSource);
 	}
 
 	@Override
-	public List<Bus> getBusesByType(String busType) {
+	public List<Bus> getBusesBybusType(String busType) {
 		// TODO Auto-generated method stub
-		return repository.findByType(busType);
+		return repository.findBybusType(busType);
 	}
 
 }

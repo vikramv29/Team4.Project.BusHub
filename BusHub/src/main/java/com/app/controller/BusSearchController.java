@@ -22,17 +22,17 @@ public class BusSearchController {
 	}
 	
 	@GetMapping("/buses/busName/{busName}")
-	public List<Bus> getBusesByName(@PathVariable String busName){
-		return service.getBusesByName(busName);
+	public List<Bus> getBusesBybusName(@PathVariable String busName){
+		return service.getBusesBybusName(busName);
 	}
 	
 	@GetMapping("/buses/busSource/{busSource}")
-	public List<Bus> getBusesBySource(@PathVariable String busSource){
-		return service.getBusesBySource(busSource);
+	public List<Bus> getBusesBybusSource(@PathVariable String busSource){
+		return service.getBusesBybusSource(busSource);
 	}
 	
 	@GetMapping("/buses/busType/{busType}")
-	public List<Bus> getBusesByType(@PathVariable String busType){
-		return service.getBusesByType(busType);
+	public List<Bus> getBusesBybusType(@PathVariable String busType){
+		return service.getBusesBybusType(busType);
 	}
 }
