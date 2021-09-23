@@ -8,5 +8,5 @@ import com.app.model.Customer;
 
 public interface CustomerRepository extends JpaRepository<Customer, Integer> {
 
-	List<Customer> findByName(String customerName);
+	List<Customer> findBycustomerName(String customerName);
 }

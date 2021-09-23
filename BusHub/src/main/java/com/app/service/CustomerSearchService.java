@@ -7,5 +7,5 @@ import com.app.model.Customer;
 public interface CustomerSearchService {
 
 	List<Customer> getAllCustomers();
-	List<Customer> getCustomersByName(String customerName);
+	List<Customer> getCustomersBycustomerName(String customerName);
 }

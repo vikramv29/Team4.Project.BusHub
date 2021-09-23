@@ -23,8 +23,8 @@ public class CustomerSearchController {
 	}
 	
 	@GetMapping("/customers/customerName/{customerName}")
-	public List<Customer> getCustomersByName(@PathVariable String customerName){
-		return service.getCustomersByName(customerName);
+	public List<Customer> getCustomersBycustomerName(@PathVariable String customerName){
+		return service.getCustomersBycustomerName(customerName);
 	}
 	
 }
