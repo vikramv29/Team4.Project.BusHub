@@ -16,7 +16,7 @@ public class CustomerSearchServiceImpl implements CustomerSearchService {
 	private CustomerRepository repository;
 
 	@Override
-	public List<Customer> getCustomerByName(String customerName) {
+	public List<Customer> getCustomersByName(String customerName) {
 		// TODO Auto-generated method stub
 		return repository.findByName(customerName);
 	}
