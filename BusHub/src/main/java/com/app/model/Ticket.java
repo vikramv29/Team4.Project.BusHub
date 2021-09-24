@@ -19,15 +19,16 @@ import lombok.Data;
 public class Ticket {
 
 	@Id
+	@GeneratedValue
 //	@GeneratedValue(generator = "uuid2")
 //	@GenericGenerator(name = "uuid2", strategy = "org.hibernate.id.UUIDGenerator")
 	private int ticketId;
 
-	@ManyToOne
+	@OneToOne
 	@JoinColumn(name = "customerId")
 	private Customer customer;
 
-	@ManyToOne
+	@OneToOne
 	@JoinColumn(name = "busId")
 	private Bus bus;
 	private int noOfPassengers;
