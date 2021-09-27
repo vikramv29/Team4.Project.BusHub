@@ -9,8 +9,7 @@ This application has not only been deployed for the customer side but also for t
 
 1. Vikram Verma
 2. Nikhil Sinha
-3. Mourya krishna Vinnakota
-4. Arjun Sankar              
+3. Mourya krishna Vinnakota           
 
 # User Stories
 
