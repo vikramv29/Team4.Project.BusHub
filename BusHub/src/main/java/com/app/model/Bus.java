@@ -21,10 +21,10 @@ public class Bus {
 	private String busName;
 	private String busSource;
 	private String busDestination;
-	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
 	private Date busOnBoardDate;
 	private double busPrice;
-	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
 	private Date busArrivalDate;
 	private String busType;
 	private String busStatus;
