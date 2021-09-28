@@ -27,4 +27,10 @@ public class CustomerSearchServiceImpl implements CustomerSearchService {
 		return repository.findAll();
 	}
 
+	@Override
+	public Customer getCustomerBycustomerEmailId(String customerEmailId) {
+		// TODO Auto-generated method stub
+		return repository.findBycustomerEmailId(customerEmailId);
+	}
+
 }

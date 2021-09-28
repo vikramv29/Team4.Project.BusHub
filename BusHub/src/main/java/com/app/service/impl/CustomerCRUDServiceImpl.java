@@ -27,7 +27,7 @@ public class CustomerCRUDServiceImpl implements CustomerCRUDService {
 	}
 
 	@Override
-	public Customer getCustomerById(int customerId) {
+	public Customer getCustomerBycustomerId(int customerId) {
 		// TODO Auto-generated method stub
 		return repository.findById(customerId).get();
 	}

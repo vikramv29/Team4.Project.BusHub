@@ -9,4 +9,6 @@ import com.app.model.Customer;
 public interface CustomerRepository extends JpaRepository<Customer, Integer> {
 
 	List<Customer> findBycustomerName(String customerName);
+	Customer findBycustomerEmailId(String customerEmailId);
+	
 }
