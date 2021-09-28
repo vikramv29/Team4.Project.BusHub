@@ -18,6 +18,7 @@ public class TicketSearchController {
 	@Autowired
 	private TicketSearchService service;
 
+	
 	@GetMapping("/tickets")
 	public List<Ticket> getAllTickets() {
 		return service.getAllTickets();

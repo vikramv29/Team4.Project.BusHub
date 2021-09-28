@@ -29,4 +29,11 @@ public class CustomerSearchController {
 		return service.getCustomersBycustomerName(customerName);
 	}
 	
+	@GetMapping("/customers/customerEmailId/{customerEmailId}")
+	public Customer getCustomersByEmailId(@PathVariable String customerEmailId){
+		return service.getCustomerBycustomerEmailId(customerEmailId);
+	}
+	
+	//@GetMapping("/customers/login/{customerEmailId}{customerPassword}")
+	
 }

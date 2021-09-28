@@ -28,4 +28,5 @@ public class Bus {
 	private Date busArrivalDate;
 	private String busType;
 	private String busStatus;
+	private double busRating;
 }

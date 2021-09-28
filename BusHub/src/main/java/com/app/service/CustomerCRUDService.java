@@ -6,7 +6,7 @@ public interface CustomerCRUDService {
 
 	public Customer addCustomer(Customer customer);
 	public Customer updateCustomer(Customer customer) ;
-	public Customer getCustomerById(int customerId);
+	public Customer getCustomerBycustomerId(int customerId);
 	public void deleteCustomer(int customerId) ;
 	
 } 

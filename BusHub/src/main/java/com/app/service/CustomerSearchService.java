@@ -8,4 +8,6 @@ public interface CustomerSearchService {
 
 	List<Customer> getAllCustomers();
 	List<Customer> getCustomersBycustomerName(String customerName);
+	Customer getCustomerBycustomerEmailId(String customerEmailId);
+	
 }

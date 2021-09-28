@@ -27,7 +27,7 @@ public class CustomerCRUDController {
 
 	@GetMapping("/customer/customerId/{customerId}")
 	public Customer getCustomerById(@PathVariable int customerId) {
-		return service.getCustomerById(customerId);
+		return service.getCustomerBycustomerId(customerId);
 	}
 
 	@DeleteMapping("/cusotmer/customerId/{customerId}")
