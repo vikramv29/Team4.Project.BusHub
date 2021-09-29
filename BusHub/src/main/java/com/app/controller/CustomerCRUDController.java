@@ -30,7 +30,7 @@ public class CustomerCRUDController {
 		return service.getCustomerBycustomerId(customerId);
 	}
 
-	@DeleteMapping("/cusotmer/customerId/{customerId}")
+	@DeleteMapping("/customer/customerId/{customerId}")
 	public void deleteCustomer(@PathVariable int customerId) {
 		service.deleteCustomer(customerId);
 	}
