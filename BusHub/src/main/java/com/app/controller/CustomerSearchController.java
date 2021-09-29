@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.app.model.Bus;
@@ -18,6 +20,25 @@ public class CustomerSearchController {
 	
 	@Autowired
 	private CustomerSearchService service;
+	
+	@PostMapping("/logincheck")
+	public Customer checklogincredentials(@RequestBody Customer customer)
+	{
+		Customer c=service.getCustomerBycustomerEmailId(customer.getCustomerEmailId());
+		if(c!=null)
+		{
+		if((customer.getCustomerEmailId().equals(c.getCustomerEmailId())) && (customer.getCustomerPassword().equals(c.getCustomerPassword())))
+			return c;
+		else
+			{System.out.println("Wrong password");
+			return null;}
+		}
+		else
+		{
+			System.out.println("Does not exist");
+			return null;
+		}
+	}
 	
 	@GetMapping("/customers")
 	public List<Customer> getAllCustomers(){
