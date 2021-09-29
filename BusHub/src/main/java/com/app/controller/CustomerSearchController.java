@@ -21,7 +21,7 @@ public class CustomerSearchController {
 	@Autowired
 	private CustomerSearchService service;
 	
-	@PostMapping("/logincheck")
+	@PostMapping("/customer/logincheck")
 	public Customer checklogincredentials(@RequestBody Customer customer)
 	{
 		Customer c=service.getCustomerBycustomerEmailId(customer.getCustomerEmailId());
