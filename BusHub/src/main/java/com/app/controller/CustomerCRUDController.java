@@ -14,7 +14,7 @@ import com.app.model.Customer;
 import com.app.service.CustomerCRUDService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin
 public class CustomerCRUDController {
 
 	@Autowired

@@ -10,12 +10,13 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.app.exception.EmptyInputException;
 import com.app.model.Bus;
 import com.app.model.Customer;
 import com.app.service.CustomerSearchService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin
 public class CustomerSearchController {
 	
 	@Autowired
@@ -47,6 +48,7 @@ public class CustomerSearchController {
 	
 	@GetMapping("/customers/customerName/{customerName}")
 	public List<Customer> getCustomersBycustomerName(@PathVariable String customerName){
+	
 		return service.getCustomersBycustomerName(customerName);
 	}
 	
