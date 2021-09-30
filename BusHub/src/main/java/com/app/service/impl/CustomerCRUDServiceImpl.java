@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.stereotype.Service;
 
+import com.app.exception.EmptyInputException;
 import com.app.model.Customer;
 import com.app.repository.CustomerRepository;
 import com.app.service.CustomerCRUDService;
@@ -16,12 +17,20 @@ public class CustomerCRUDServiceImpl implements CustomerCRUDService {
 
 	@Override
 	public Customer addCustomer(Customer customer) {
-		// TODO Auto-generated method stub
+		
+		if(customer.getCustomerEmailId().length() == 0 || customer.getCustomerPassword().length() == 0 || customer.getCustomerName().length() == 0) {
+			throw new EmptyInputException("Please enter something");
+		}
+		
 		return repository.save(customer);
 	}
 
 	@Override
 	public Customer updateCustomer(Customer customer) {
+		
+		if(customer.getCustomerEmailId().length() == 0 || customer.getCustomerPassword().length() == 0 || customer.getCustomerName().length() == 0) {
+			throw new EmptyInputException("Please enter something");
+		}
 		// TODO Auto-generated method stub
 		return repository.save(customer);
 	}

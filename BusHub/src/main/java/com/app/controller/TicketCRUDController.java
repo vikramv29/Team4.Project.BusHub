@@ -14,7 +14,7 @@ import com.app.service.TicketCRUDService;
 import com.app.service.impl.TicketCRUDServiceImpl;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin
 public class TicketCRUDController {
 
 	@Autowired

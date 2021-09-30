@@ -12,7 +12,7 @@ import com.app.model.Bus;
 import com.app.service.BusSearchService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin
 public class BusSearchController {
 	
 	@Autowired

@@ -12,7 +12,7 @@ import com.app.model.Ticket;
 import com.app.service.TicketSearchService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin
 public class TicketSearchController {
 
 	@Autowired
