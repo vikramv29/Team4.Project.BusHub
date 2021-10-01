@@ -19,6 +19,10 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table
 public class Bus {
+	public Bus(int busId2, String busName2, String busSource2, String busDestination2, long parse, double busPrice2,
+			long parse2, String busType2, String busStatus2, double busRating2) {
+		// TODO Auto-generated constructor stub
+	}
 	@Id
 	@GeneratedValue
 	private int busId;
