@@ -42,14 +42,14 @@ public class CustomerCrudTests {
 		assertEquals(customer.getCustomerName(), service.updateCustomer(customer).getCustomerName());
 	}
 	
-	@Test
-	public void getCustomerBycustomerIdTest() {
-		int customerId = 8;
-		//when(repository.findById(customerId).get()).thenReturn(new Customer(8, "Arjun", "arjun@gmail.com", "arjun"));
-		service.getCustomerBycustomerId(customerId);
-		verify(repository, times(1)).getOne(customerId);
-		//assertEquals(customerId, service.getCustomerBycustomerId(customerId).getCustomerId());
-	}
+//	@Test
+//	public void getCustomerBycustomerIdTest() {
+//		int customerId = 8;
+//		//when(repository.findById(customerId).get()).thenReturn(new Customer(8, "Arjun", "arjun@gmail.com", "arjun"));
+//		service.getCustomerBycustomerId(customerId);
+//		verify(repository, times(1)).getOne(customerId);
+//		//assertEquals(customerId, service.getCustomerBycustomerId(customerId).getCustomerId());
+//	}
 	
 	@Test
 	public void  deleteCustomerTest() {
