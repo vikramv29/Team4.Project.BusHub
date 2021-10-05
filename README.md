@@ -21,7 +21,7 @@ This application has not only been deployed for the customer side but also for t
 12. Lombok
 
 
-# Team Members
+# Contributers
 
 1. Vikram Verma
 2. Nikhil Sinha
