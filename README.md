@@ -5,6 +5,22 @@ It is an online commerical bus booking platform where a customer can enter his s
 This application has not only been deployed for the customer side but also for the employee of BusHub where he can see the customers logged into the application, search the customers by various filters like name, id, etc, add as many buses as he may be directed by the company, update the rating and price of the buses based on their performance on specific days, and mark the status of on boarding journey as reached, en route, cancelled,etc.
 
 
+# Technologies Used
+
+1. Java 
+2. Spring Data 
+3. Spring Test 
+4. Spring AOP 
+5. Spring Framework 
+6. Spring Boot 
+7. JUnit 
+8. Postman 
+9. Log4J
+10. MySQL 
+11. Swagger 
+12. Lombok
+
+
 # Team Members
 
 1. Vikram Verma
